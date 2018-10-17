@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HouseRental" Class="HouseRentalDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TSS-LAPTOP\SQL2008;Initial Catalog=HouseRental;Integrated Security=True" SettingsObjectName="CstayShared.My.MySettings" SettingsPropertyName="HouseRentalConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CodeData" Member="CodeDatas">
+    <Type Name="CodeData">
+      <Column Name="CodeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodeKey" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CodeValue" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CodeValueLarge" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsEmailTemplate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bookings" Member="Bookings">
+    <Type Name="Booking">
+      <Column Name="Booking_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Property_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Host_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Guest_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ArriveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DepartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HostTelephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Rate" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="RequestReceived" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HostPaidAmtDep" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HostPaidAmtDepFromCredit" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DepositDue" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DepositReceived" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DepositAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="BalanceDueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BalanceDue" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="ConfirmationSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BalanceReceived" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BalanceAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HostPdDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HostPaidAmtBal" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HostPaidAmtBalFromCredit" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Commission" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="BookingNotes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DepCardType" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="DepCardNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DepCardNumberEncrypted" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DepCardConfirm" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="BalCardType" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="BalCardNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BalCardNumberEncrypted" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BalCardConfirm" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="AutoCharge" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Adults" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Children" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Teens" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TaxDue" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="RentalBalance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DepCheckName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DepCheckNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BalCheckName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BalCheckNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LocationBooked" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="OrigDepCardNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OrigBalCardNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CancellationHostPaymentProcessed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LateCancellationRefundDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LateCancellationRefundStatus" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LateCancellationRefundAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="LateCancellationFeeAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="LateCancellationRefundReBookingID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CancellationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FinalBalancePaymentMadeOnline" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FinalDepositPaymentMadeOnline" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepositAmountPaid" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="ConfirmationEmail" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ConfirmationEmailSentDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="QBActivityIDFirstPayment" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QBActivityIDBalancePayment" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QBActivityIDFullPayment" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PrivateNotes" Type="System.String" DbType="VarChar(3000)" CanBeNull="true" />
+      <Column Name="HowDidGuestFindCStay" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="HowCanCstayImprove" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Guests" Member="Guests">
+    <Type Name="Guest">
+      <Column Name="Guest_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GuestName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GuestFirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GuestLastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Zip" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="HomePhone" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="WorkPhone" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="CellPhone" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GuestNotes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CellPhone2" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="Email2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="QBListID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AuthNETCustomerProfileID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RentalBlacklist" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NeverEmail" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UseInComboBox" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrigCity" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vwPropertiesWithGroup" Member="vwPropertiesWithGroups">
+    <Type Name="vwPropertiesWithGroup">
+      <Column Name="Property_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Category_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PropertyGroupName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SequenceNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MasterWebDescription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="GroupID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Zip" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="WebDetailsDescription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="WebDetailsTitle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WebDetailsLeftSection" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="PropertyName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="GroupName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DiscountedRate" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Category_ID2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MilesToCoop" Type="System.Decimal" DbType="Decimal(24,0)" CanBeNull="true" />
+      <Column Name="MilesToDreams" Type="System.Decimal" DbType="Decimal(24,0)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="Sleeps" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bedrooms" Type="System.Decimal" DbType="Decimal(24,0)" CanBeNull="true" />
+      <Column Name="Baths" Type="System.Decimal" DbType="Decimal(24,1)" CanBeNull="true" />
+      <Column Name="SummerRate" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DamageDeposit" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CableTV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VCR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Grill" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WindowAC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WasherDryer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Broadband" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Handicap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WheelchairAccess" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PropertyNotes" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="Commission_Pct" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TaxRate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Distance2CDP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Distance2BW" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Distance2ASV" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Distance2Coop" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DVD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CentralAC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DishSatellite" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dialup" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SquareFootage" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KingBeds" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QueenBeds" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DoubleBeds" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TwinBeds" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BunkBeds" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SleeperSofa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Futon" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dishwasher" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pool" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Wireless" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PrivatePond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeamParties" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MasterImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MasterImageFile" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="MasterImageFileEnlarged" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="MasterImageFileAlt" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="MasterImageFileheight" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MasterImageFileWidth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WebCategoryTitle" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="GroupMasterText" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="GroupDetailsText" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="WebDetailsRightSection" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="WebMasterDescription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="WebMasterTitle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GoogleAdwordsTrackingKey" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WebLeftSection" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="WebMiddleSection" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="WebRightSection" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="WebPage" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="WebImage" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Offline" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Category_ID3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WebTestimonialLeft" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="WebTestimonialRight" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TestimonialLeft" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TestimonialRight" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="WebDisplaySequence" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vwPropertyMasterImages" Member="vwPropertyMasterImages">
+    <Type Name="vwPropertyMasterImage">
+      <Column Name="Property_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Category_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageFile" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ImageType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ImageHeight" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageWidth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageAlt" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="ImageStatus" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PropertyGroupID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

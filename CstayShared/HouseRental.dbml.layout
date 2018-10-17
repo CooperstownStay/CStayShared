@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.125, 20.125" name="HouseRental">
+  <DataContextMoniker Name="/HouseRentalDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1dc41590-6bd8-49e7-a428-fc593238c026" absoluteBounds="5.75, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/HouseRentalDataContext/CodeData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="899e325a-574c-4128-98a2-c24618686f7f" absoluteBounds="5.765, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="78d6d8cc-4c9b-4a2f-8b12-f5abdecbbf0b" absoluteBounds="2.125, 1.5, 2, 13.308982747395833">
+      <DataClassMoniker Name="/HouseRentalDataContext/Booking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="728a7e26-a37d-46a1-92a7-1b3839a20dae" absoluteBounds="2.14, 1.96, 1.9700000000000002, 12.748982747395832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7c14e31a-0da2-45d6-9fe9-3bb6d99eef77" absoluteBounds="6.75, 3.875, 2, 5.2323225911458326">
+      <DataClassMoniker Name="/HouseRentalDataContext/Guest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecf88647-1bed-4fd7-9cc7-e3e92a374549" absoluteBounds="6.765, 4.335, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02f5f88a-9cad-41a0-93d9-070db30919e2" absoluteBounds="8.875, 2.5, 2, 17.347312825520834">
+      <DataClassMoniker Name="/HouseRentalDataContext/vwPropertiesWithGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45fd1120-c2f2-4a8c-9550-882620b66f66" absoluteBounds="8.89, 2.96, 1.9700000000000002, 16.787312825520832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="077efba0-3fc7-45aa-88e2-3a1e574c4284" absoluteBounds="5, 3.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/HouseRentalDataContext/vwPropertyMasterImage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6a94dfd-1b9f-470e-89e6-f2ce686c56f9" absoluteBounds="5.015, 3.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
