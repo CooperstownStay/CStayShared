@@ -11,6 +11,8 @@ Public Class MyData
 
   Inherits System.Web.UI.Page
 
+  Private sTest As String = ""
+
   Private Shared mHouseRentalContext As HouseRentalDataContext = Nothing
   Public Shared ReadOnly Property HouseRentalContext() As HouseRentalDataContext
     Get
