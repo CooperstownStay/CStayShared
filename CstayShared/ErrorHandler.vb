@@ -11,8 +11,6 @@ Public Class ErrorHandler
   Public oUtil As SharedUtilities
   Public bRunningAsDLL As Boolean = False
 
-
-
   Private Function CNullS(ByVal oInp As Object, Optional ByVal sDefault As String = "") As String
     CNullS = sDefault
     If Not IsDBNull(oInp) Then
